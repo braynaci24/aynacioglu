@@ -93,7 +93,10 @@ body {
   opacity: 0.7;
 }
 .makine-img {
-  height: 380px;
+  /* height: 380px; */
+}
+.makine-img+.card-body {
+  flex: none;
 }
 .card.h-100:hover {
   border-radius: 10px;
