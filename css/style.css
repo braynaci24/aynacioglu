@@ -1,11 +1,25 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+.x {
+  height: 70px;
+}
 .nav-link {
-  font-size: 17px;
+  font-size: 19px;
 }
 .nav-item {
-  margin-right: 14px;
+  margin-right: 40px; 
+}
+.navbar-light .navbar-brand  {
+  color: #0eb3d6;
+  font-family: 'Vollkorn', serif;
+  font-size: 28px;
+}
+.navbar-light .navbar-brand:hover {
+  color: #0eb3d6;
+}
+.navbar-light .navbar-brand:focus {
+  color: #0eb3d6;
 }
 .contact-icon {
   font-size: 17px;
@@ -14,9 +28,36 @@ body {
 .contact {
   margin-right: 10px;
 }
+.wp i {
+  color: #111;
+  font-size: 25px;
+  margin-right: 10px;
+}
+.wp i:hover {
+  color: green;
+}
+.fc i {
+  color: #111;
+  font-size: 23px;
+  margin-right: 50px;
+}
+.fc i:hover {
+  color: blue;
+}
+.contact-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-2 span:last-child {
+  color: #0eb3d6;
+}
+.today-contact {
+  opacity: 0.7;
+}
 .box {
-  width: 496px;
-  height: 265px;
+  width: 478px;
+  height: 255px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -24,9 +65,6 @@ body {
   justify-content: center;
   box-shadow: -1px 2px 36px -13px rgba(0,0,0,0.75);
   cursor: pointer;
-}
-.last-box {
-  margin-top: 20px;
 }
 .box i {
   font-size: 40px;
@@ -42,6 +80,20 @@ body {
 }
 .box:hover {
   transition: all .3s linear;
-  background-color: #663399;
+  background-color: #7ef181;
   color: #fff;
+}
+.makine-information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+.makine-information-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+}
+.makine-img {
 }
