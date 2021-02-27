@@ -170,5 +170,11 @@ body {
 }
 .card-title-2 {
   font-size: 15px;
-
+}
+a.list-element {
+  text-decoration: none;
+  color: #111;
+}
+a.list-element:hover {
+  color:#0eb3d6;
 }
