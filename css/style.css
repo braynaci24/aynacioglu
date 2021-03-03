@@ -28,7 +28,6 @@ body {
 .wp i {
   color: #111;
   font-size: 25px;
-  margin-right: 10px;
 }
 .wp i:hover {
   color: green;
@@ -113,6 +112,10 @@ body {
   padding-bottom: 20px;
   background-color: #F0F8FF;
 }
+.main-slider-images {
+  height: 800px;
+  width: 100%;
+}
 
      /*  YEDEK PARÇA */ 
 
@@ -138,6 +141,15 @@ a.list-element {
 }
 a.list-element:hover {
   color:#0eb3d6;
+}
+.information {
+  cursor: pointer;
+}
+.information:hover {
+  color: #0eb3d6;
+}
+.main-background-images {
+  padding: 0px;
 }
 
       /*  TAMİR */
