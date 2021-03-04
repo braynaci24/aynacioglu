@@ -125,8 +125,12 @@ body {
 .slider-image {
   height: 790px;
 }
-ckground-size: cover;
+.information-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
+
      /*  YEDEK PARÇA */ 
 
 .menu li {
