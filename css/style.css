@@ -122,6 +122,9 @@ body {
 .contact-cont {
   background-color: rgb(252, 248, 248);
 }
+.slider-image {
+  height: 720px;
+}
      /*  YEDEK PARÇA */ 
 
 .menu li {
