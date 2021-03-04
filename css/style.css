@@ -123,7 +123,11 @@ body {
   background-color: rgb(252, 248, 248);
 }
 .slider-image {
-  height: 720px;
+  height: 790px;
+}
+.header {
+  z-index: 9;
+  background-color: #f5ffff;
 }
      /*  YEDEK PARÇA */ 
 
@@ -175,4 +179,9 @@ a.list-element:hover {
 .makine-information-3 {
   font-size: 21px;
   color: #00BBD1;
+}
+@media (max-width: 800px) {
+  .slider-image {
+    height: 100%;
+  }
 }
