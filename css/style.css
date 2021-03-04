@@ -112,7 +112,16 @@ body {
   padding-bottom: 20px;
   background-color: #F0F8FF;
 }
-
+.contanct-bold{
+  font-weight: 700;
+  font-size: 20px;
+}
+.contact {
+  color: #111;
+}
+.contact-cont {
+  background-color: rgb(252, 248, 248);
+}
      /*  YEDEK PARÇA */ 
 
 .menu li {
