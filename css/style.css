@@ -125,9 +125,9 @@ body {
 .slider-image {
   height: 790px;
 }
-.header {
-  z-index: 9;
-  background-color: #f5ffff;
+.background-image {
+  background-image: url(../images/contact.jpg);
+  background-size: cover;
 }
      /*  YEDEK PARÇA */ 
 
