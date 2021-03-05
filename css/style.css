@@ -155,7 +155,9 @@ body {
   background-color: #fff;
 }
      /*  YEDEK PARÇA */ 
-
+.bg-primary {
+  background-color: #629690!important;
+}
 .menu li {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -167,14 +169,14 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #F0F8FF;
-  border-bottom: 13px solid #00BBD1;
+  border-bottom: 13px solid #202020;
 }
 .card-title-2 {
   font-size: 15px;
 }
 a.list-element {
   text-decoration: none;
-  color: #111;
+  color: #fff;
 }
 a.list-element:hover {
   color:#0eb3d6;
@@ -199,6 +201,11 @@ a.list-element:hover {
 .box-information {
   max-width: 400px;
 }
+.list-background  {
+  background-color: #202020;
+  border-bottom: 1px solid #fff;
+}
+
       /*  TAMİR */
 
 .tamir-cont {
