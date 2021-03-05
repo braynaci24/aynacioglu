@@ -25,10 +25,10 @@ body {
   color: #F0F8FF;
 }
 .navbar-light .navbar-brand:hover {
-  color: #0eb3d6;
+  color: #F0F8FF;
 }
 .navbar-light .navbar-brand:focus {
-  color: #0eb3d6;
+  color: #F0F8FF;
 }
 .contact-icon {
   font-size: 17px;
@@ -128,8 +128,8 @@ body {
 }
 .footer-bottom {
   height: 60px; 
-  background-color: #F1F1F1; 
-  color: #202020;
+  background-color: #111; 
+  color: #F0F8FF;
 }
 .contanct-bold{
   font-weight: 700;
