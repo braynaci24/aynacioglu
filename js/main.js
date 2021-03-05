@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  var dataBase = JSON.parse(localStorage.getItem('database')) || []
 
+  var dataBase = JSON.parse(localStorage.getItem('database')) || []
 
   $('.form-button').click(function () {
     var _val = $('.name-input').val()
@@ -11,4 +11,5 @@ $(document).ready(function () {
     dataBase.push(_val3)
     localStorage.setItem('database', JSON.stringify(dataBase));
   })
+
 })
