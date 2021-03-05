@@ -8,9 +8,21 @@ body {
   margin-right: 40px; 
 }
 .navbar-light .navbar-brand  {
-  color: #0eb3d6;
-  font-family: 'Vollkorn', serif;
+  color: #F1F0E0;
+  font-family: 'Audiowide', cursive;
   font-size: 28px;
+}
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color:#202020;
+}
+.navbar-none-padding {
+  padding-top: .0rem;
+  padding-bottom: .0rem;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: #F0F8FF;
 }
 .navbar-light .navbar-brand:hover {
   color: #0eb3d6;
@@ -26,14 +38,14 @@ body {
   margin-right: 10px;
 }
 .wp i {
-  color: #111;
+  color: #fff;
   font-size: 25px;
 }
 .wp i:hover {
   color: green;
 }
 .fc i {
-  color: #111;
+  color: #fff;
   font-size: 23px;
   margin-right: 30px;
 }
@@ -46,10 +58,11 @@ body {
   align-items: center;
 }
 .contact-2 span:last-child {
-  color: #0eb3d6;
+  color: #F1F0E0;
 }
 .today-contact {
   opacity: 0.7;
+  color: #fff;
 }
 .box {
   width: 442px;
@@ -102,15 +115,21 @@ body {
   padding-top: 8px;
   padding-bottom: 8px;
   text-decoration: none;
-  color: #111;
+  color: #F0F8FF;
 }
 .footer-link:hover {
   color: #00BBD1;
 }
 .footer {
+  color: #F0F8FF;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #F0F8FF;
+  background-color: #202020;
+}
+.footer-bottom {
+  height: 60px; 
+  background-color: #F1F1F1; 
+  color: #202020;
 }
 .contanct-bold{
   font-weight: 700;
