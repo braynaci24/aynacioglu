@@ -157,6 +157,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.responsive-icon {
+  background-color: #fff;
+}
      /*  YEDEK PARÇA */ 
 
 .menu li {
