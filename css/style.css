@@ -130,7 +130,14 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-
+.hakkimizda-container {
+  padding: 30px;
+}
+.hakkimizda-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
      /*  YEDEK PARÇA */ 
 
 .menu li {
@@ -186,4 +193,9 @@ a.list-element:hover {
   .slider-image {
     height: 100%;
   }
+}
+@media (min-width: 1400px){
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  max-width: 1389px;
+}
 }
