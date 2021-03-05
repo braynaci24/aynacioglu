@@ -202,7 +202,9 @@ a.list-element:hover {
   color: #111(58, 58, 58);
   font-weight: 700;
 }
-
+.box-information {
+  max-width: 400px;
+}
       /*  TAMİR */
 
 .tamir-cont {
@@ -229,6 +231,7 @@ a.list-element:hover {
   .machine-title {
     font-size: 27px;
   }
+  
 }
 @media (min-width: 1400px){
 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
