@@ -44,9 +44,9 @@ body {
   height: 450px;
 }
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-image: linear-gradient(to bottom right, #2C5E17, #91D34C);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(to bottom right, #0F0D12, #676E7F);
 }
 .navbar-none-padding {
   padding-top: .0rem;
@@ -54,6 +54,7 @@ body {
 }
 .navbar-light .navbar-nav .nav-link.active {
   color: #F0F8FF;
+  font-size: 19px;
 }
 .navbar-light .navbar-brand:hover {
   color: #F0F8FF;
@@ -63,25 +64,29 @@ body {
 }
 .card-titles {
   font-size: 30px;
-  color: #fff;
+  color: black;
 }
-.x {
+.box-padding {
   padding-bottom: 25px;
 }
 .information {
-  background-image: linear-gradient(180deg, #063340, #04D010);
+  background: #FFF;
   padding: 10px 10px;
   font-family: 'BenchNine', sans-serif;
   border-radius: 8px;
+  border-bottom: 5px solid #3c3191!important;
 }
 .information span, p {
   font-size: 27px;
-  color: #fff;
+  color: black;
   letter-spacing: 1px;
 }
 .information i {
-  color: #fff;
+  color: black;
   font-size: 40px;
+}
+.card.border-secondary.mb-3.information {
+  box-shadow:0px 0px 10px 0px rgba(50, 50, 50, 0.32);
 }
 .contact-icon {
   font-size: 17px;
@@ -151,7 +156,7 @@ body {
   color: #F0F8FF;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #202020;
+  background-image: linear-gradient(to bottom right, #0F0D12, #676E7F);
 }
 .footer-bottom {
   height: 60px; 
@@ -223,9 +228,7 @@ a.list-element:hover {
 .information {
   cursor: pointer;
 }
-.information:hover {
-  color: #0eb3d6;
-}
+
 .main-background-images {
   padding: 0px;
 }
