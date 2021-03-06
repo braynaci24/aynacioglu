@@ -25,7 +25,7 @@ body {
   left: 170px;
   font-size: 42px;
   font-family: 'Audiowide', cursive;
-  color: #2D2564;
+  color: #2D73C1;
 }
 .position-span-2 {
   position: absolute;
@@ -33,7 +33,7 @@ body {
   left: 170px;
   font-size: 23px;
   font-family: 'Audiowide', cursive;
-  color: #5C038C;
+  color: #41483C;
 }
 .position-image {
   position: absolute;
@@ -200,7 +200,7 @@ body {
 }
      /*  YEDEK PARÇA */ 
 .bg-primary {
-  background-color: #629690!important;
+  background-color: #2C3245!important;
 }
 .menu li {
   padding-top: 20px;
@@ -220,7 +220,7 @@ body {
 }
 a.list-element {
   text-decoration: none;
-  color: #fff;
+  color: #111;
 }
 a.list-element:hover {
   color:#0eb3d6;
@@ -244,8 +244,8 @@ a.list-element:hover {
   max-width: 400px;
 }
 .list-background  {
-  background-color: #202020;
-  border-bottom: 1px solid #fff;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(155, 154, 154);
 }
 
       /*  TAMİR */
