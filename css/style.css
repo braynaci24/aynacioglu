@@ -67,14 +67,14 @@ body {
   color: black;
 }
 .box-padding {
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 .information {
   background: #FFF;
   padding: 10px 10px;
   font-family: 'BenchNine', sans-serif;
   border-radius: 8px;
-  border-bottom: 5px solid #3c3191!important;
+  border-bottom: 10px solid #3c3191!important;
 }
 .information span, p {
   font-size: 27px;
