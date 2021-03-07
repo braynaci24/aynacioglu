@@ -11,5 +11,13 @@ $(document).ready(function () {
     dataBase.push(_val3)
     localStorage.setItem('database', JSON.stringify(dataBase));
   })
-
 })
+$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
+  var navbarHeight = $(".navbar").height();
+  if (scroll > navbarHeight) {
+    $(".navbar").addClass("fixed-top");
+  } else {
+    $(".navbar").removeClass("fixed-top")
+  }
+});
