@@ -149,21 +149,24 @@ body {
   padding-top: 8px;
   padding-bottom: 8px;
   text-decoration: none;
-  color: #F0F8FF;
+  color: #3c3191;
 }
 .footer-link:hover {
-  color: #00BBD1;
+  color: #3c3191;
 }
 .footer {
   color: #F0F8FF;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-image: linear-gradient(to bottom right, #0F0D12, #676E7F);
+  background-color: #fff;
 }
 .footer-bottom {
   height: 60px; 
   background-color: #111; 
   color: #F0F8FF;
+}
+.footer-information {
+  color: black;
 }
 .contanct-bold{
   font-weight: 700;
