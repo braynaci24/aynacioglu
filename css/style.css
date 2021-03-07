@@ -208,6 +208,18 @@ body {
   padding-right: 0px;
   padding-left: 0px;
 }
+.navbar-light .navbar-toggler:focus {
+  color: #3c3191;
+  border-color: #3c3191;
+}
+.navbar-toggler-icon  {
+  color: #3c3191;
+}
+.navbar-light .navbar-toggler {
+  color: #3c3191;
+  border-color: #3c3191;
+}
+
      /*  YEDEK PARÇA */ 
 .bg-primary {
   background-color: #2C3245!important;
