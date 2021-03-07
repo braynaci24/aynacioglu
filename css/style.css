@@ -219,7 +219,9 @@ body {
   color: #3c3191;
   border-color: #3c3191;
 }
-
+.responsive-menu-icon {
+  color: #3c3191;
+}
      /*  YEDEK PARÇA */ 
 .bg-primary {
   background-color: #2C3245!important;
