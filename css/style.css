@@ -253,6 +253,7 @@ a.list-element:hover {
   border-bottom: 1px solid rgb(155, 154, 154);
 }
 
+
       /*  TAMİR */
 
 .tamir-cont {
@@ -276,6 +277,9 @@ a.list-element:hover {
   }
   .machine-title {
     font-size: 27px;
+  }
+  .responsive-box {
+    width: 280px;
   }
  
 }
