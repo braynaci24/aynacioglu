@@ -279,7 +279,8 @@ a.list-element:hover {
     font-size: 27px;
   }
   .responsive-box {
-    width: 250px;
+    width: 280px;
+    height: 290px;
   }
  
 }
