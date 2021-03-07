@@ -279,8 +279,16 @@ a.list-element:hover {
     font-size: 27px;
   }
   .responsive-box {
-    width: 280px;
-    height: 290px;
+    width: 230px;
+  }
+  .card-titles {
+    font-size: 18px;
+  }
+  .responsive-text {
+    font-size: 15px!important;
+  }
+  .responsive-padding {
+    padding: 0rem 0rem!important;
   }
  
 }
