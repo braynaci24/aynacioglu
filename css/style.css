@@ -198,6 +198,10 @@ body {
 .hakkimizda-title {
   color: #111;
 }
+.slider-container {
+  padding-right: 0px;
+  padding-left: 0px;
+}
      /*  YEDEK PARÇA */ 
 .bg-primary {
   background-color: #2C3245!important;
