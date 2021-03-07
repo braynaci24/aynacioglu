@@ -77,6 +77,7 @@ body {
   font-family: 'BenchNine', sans-serif;
   border-radius: 8px;
   border-bottom: 10px solid #3c3191!important;
+  border: 0px;
 }
 .information span, p {
   font-size: 27px;
@@ -169,6 +170,11 @@ body {
   color: black;
   text-decoration: none;
 }
+.footer-title {
+  font-size: 20px; 
+  color: #3c3191; 
+  padding-top: 10px;
+}
 .contanct-bold{
   font-weight: 700;
   font-size: 20px;
@@ -200,6 +206,7 @@ body {
   font-size: 18px!important;
   letter-spacing: 0px;
   line-height: 27px;
+  opacity: 0.9;
 }
 .hakkimizda-title {
   color: #111;
@@ -261,7 +268,7 @@ a.list-element:hover {
 .machine-title {
   font-size: 40px; 
   color: #111(58, 58, 58);
-  font-weight: 700;
+  font-weight: 400;
 }
 .box-information {
   max-width: 400px;
@@ -307,6 +314,12 @@ a.list-element:hover {
   }
   .responsive-padding {
     padding: 0rem 0rem!important;
+  }
+  .footer-title {
+    font-size: 14px;
+  }
+  .footer-information {
+    font-size: 13px;
   }
  
 }
