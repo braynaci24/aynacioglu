@@ -376,6 +376,10 @@ a.list-element:hover {
     font-size: 13px;
   }
 
+  .page-title {
+    font-size: 23px;
+  }
+
 }
 
 @media (min-width: 1400px) {
