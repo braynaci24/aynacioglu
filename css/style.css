@@ -382,6 +382,10 @@ a.list-element:hover {
   .yedek-parca-link {
     font-size: 15px;
   }
+  .contact-2 span:last-child {
+    color: #3c3191;
+    text-decoration: none;
+  }
 
 }
 
