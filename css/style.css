@@ -46,7 +46,6 @@ body {
   padding-bottom: 20px;
   background-color: #fff;
 }
-
 .navbar-none-padding {
   padding-top: .0rem;
   padding-bottom: .0rem;
@@ -127,6 +126,7 @@ p {
 
 .contact-2 span:last-child {
   color: #3c3191;
+  text-decoration: none;
 }
 
 .today-contact {
@@ -381,9 +381,6 @@ a.list-element:hover {
   }
   .yedek-parca-link {
     font-size: 15px;
-  }
-  .header-number {
-    text-decoration: none;
   }
 
 }
