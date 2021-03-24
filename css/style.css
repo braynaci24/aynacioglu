@@ -382,6 +382,9 @@ a.list-element:hover {
   .yedek-parca-link {
     font-size: 15px;
   }
+  .header-number {
+    text-decoration: none;
+  }
 
 }
 
