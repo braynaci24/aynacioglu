@@ -379,6 +379,9 @@ a.list-element:hover {
   .navbar-light .navbar-brand {
     font-size: 23px;
   }
+  .yedek-parca-link {
+    font-size: 15px;
+  }
 
 }
 
