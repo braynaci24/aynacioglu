@@ -1,0 +1,1 @@
+aynacioglu.netlify.app
