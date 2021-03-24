@@ -1,1 +1,1 @@
-aynacioglu.netlify.app
+https://aynacioglu.netlify.app/
