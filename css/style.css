@@ -215,7 +215,6 @@ p {
 .hakkimizda-container {
   padding: 30px;
 }
-
 .hakkimizda-image {
   display: flex;
   align-items: center;
@@ -225,7 +224,9 @@ p {
 .responsive-icon {
   background-color: #fff;
 }
-
+.b {
+  padding: 10px 100px;
+}
 .hakkimizda-text {
   color: #111;
   font-size: 15px !important;
@@ -386,7 +387,12 @@ a.list-element:hover {
     color: #3c3191;
     text-decoration: none;
   }
-
+  .tamir-title {
+    font-size: 30px;
+  }
+  .special-makine-link {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 1400px) {
