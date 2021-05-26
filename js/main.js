@@ -30,8 +30,13 @@ $(document).ready(function () {
 
   $('body').on('click', '.trash', function () {
     let srcTrash = $(this).prev().prev().attr('src');
-    let ind = data.splice(srcTrash, 1);
+    let textDelete = $(this).prev().text();
+    let indxText = dataPieceName.indexOf(textDelete)
+    let indx = data.indexOf(srcTrash);
+    data.splice(indx,1 )
+    dataPieceName.splice(indxText, 1)
     localStorage.setItem('favorites', JSON.stringify(data));
+    localStorage.setItem('piece', JSON.stringify(dataPieceName));
     $(this).parent().remove();
   })
 
