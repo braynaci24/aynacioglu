@@ -46,6 +46,7 @@ body {
   padding-bottom: 20px;
   background-color: #fff;
 }
+
 .navbar-none-padding {
   padding-top: .0rem;
   padding-bottom: .0rem;
@@ -216,6 +217,7 @@ p {
 .hakkimizda-container {
   padding: 30px;
 }
+
 .hakkimizda-image {
   display: flex;
   align-items: center;
@@ -225,6 +227,7 @@ p {
 .responsive-icon {
   background-color: #fff;
 }
+
 .hakkimizda-text {
   color: #111;
   font-size: 15px !important;
@@ -257,9 +260,35 @@ p {
   color: #3c3191;
   border-color: #3c3191;
 }
-.n {
-  width: 100px;
-  height: 100px;
+
+.favorites {
+  padding: 20px 20px;
+  overflow: auto;
+  display: none;
+}
+.favorites-card {
+  background-color: #3c3191;
+  width: 550px;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.b {
+  margin-left: 10px;
+}
+.times {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 30px;
+  color: red;
+  z-index: 10;
+}
+
+.fav-images {
+  width: 130px;
+  height: 130px;
 }
 
 .responsive-menu-icon {
@@ -274,21 +303,28 @@ p {
   text-decoration: none;
   color: #111;
 }
+
 .favorites-hearth-icon:hover {
   color: #3c3191;
 }
+
 .favorites-button {
   background-color: #fff;
   color: #3c3191;
   border: 1px solid #3c3191;
   border-radius: 4px;
   padding: 5px;
-  width: 110px;
+  width: 160px;
   margin-bottom: 10px;
 }
+
 .favorites-container {
   position: relative;
 }
+.trash {
+  margin-left: 20px;
+}
+
 .favorites {
   width: 600px;
   height: 500px;
@@ -297,10 +333,11 @@ p {
   border-radius: 5px;
   position: absolute;
   top: -200px;
-  bottom:  0px;
+  bottom: 0px;
   left: -100px;
   z-index: 10;
 }
+
 .bg-primary {
   background-color: #2C3245 !important;
 }
@@ -344,6 +381,7 @@ a.list-element:hover {
 .form-button {
   margin-top: 20px;
 }
+
 .form-container {
   position: relative;
 }
@@ -421,16 +459,20 @@ a.list-element:hover {
   .navbar-light .navbar-brand {
     font-size: 23px;
   }
+
   .yedek-parca-link {
     font-size: 15px;
   }
+
   .contact-2 span:last-child {
     color: #3c3191;
     text-decoration: none;
   }
+
   .tamir-title {
     font-size: 30px;
   }
+
   .special-makine-link {
     font-size: 12px;
   }

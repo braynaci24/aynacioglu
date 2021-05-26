@@ -1,6 +1,10 @@
 $(document).ready(function () {
+  let data = JSON.parse(localStorage.getItem('favorites')) || []
+  let dataPieceName = JSON.parse(localStorage.getItem('piece')) || []
 
-  let favorites = JSON.parse(localStorage.getItem('favorites')) || []
+  for (let i = 0; i < data.length; i++) {
+    $('.favorites').append(`<div class="favorites-card"><img class="fav-images" src=" ${data[i]}"><span class="b">${dataPieceName[i]}</span><i class="far fa-trash-alt trash"></i></div>`)
+  }
 
   $('.form-button').click(function () {
     $('.form-container').animate({
@@ -14,16 +18,29 @@ $(document).ready(function () {
     $('.favorites').show();
   })
 
-  $('.favorites-hearth-icon').click(function(){
+  $('.favorites-hearth-icon').click(function () {
     let imagesAttr = $(this).parent().prev().attr('src');
-    favorites.push(imagesAttr)
-    localStorage.setItem('favorites', favorites);
-
-    $('.favorites').append(`<img  class="n" src='${imagesAttr}'>`);
-    
+    let pieceName = $(this).prev().text();
+    dataPieceName.push(pieceName)
+    data.push(imagesAttr);
+    localStorage.setItem('piece', JSON.stringify(dataPieceName))
+    localStorage.setItem('favorites', JSON.stringify(data))
+    $('.favorites').append(`<div class="favorites-card"><img class="fav-images" src=" ${imagesAttr}"> <span>${pieceName}</span><i class="far fa-trash-alt trash"></i></div>`)
   })
 
+  $('body').on('click', '.trash', function () {
+    let srcTrash = $(this).prev().prev().attr('src');
+    let ind = data.splice(srcTrash, 1);
+    localStorage.setItem('favorites', JSON.stringify(data));
+    $(this).parent().remove();
+  })
+
+
+  $('.favorites-close-icon').click(function () {
+    $('.favorites').hide();
+  })
 })
+
 
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
