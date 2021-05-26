@@ -1,9 +1,12 @@
 $(document).ready(function () {
   let data = JSON.parse(localStorage.getItem('favorites')) || []
   let dataPieceName = JSON.parse(localStorage.getItem('piece')) || []
-
   for (let i = 0; i < data.length; i++) {
-    $('.favorites').append(`<div class="favorites-card"><img class="fav-images" src=" ${data[i]}"><span class="b">${dataPieceName[i]}</span><i class="far fa-trash-alt trash"></i></div>`)
+    $('.favorites').append(`<div class="favorites-card"><img class="fav-images" src=" ${data[i]}"><i class="far fa-trash-alt trash"></i></div>`)
+    for(let j = 0; j < dataPieceName.length; i++){
+      $('.favorites').append(`<div class="favorites-card"><span class="b">${dataPieceName[i]}</span><i class="far fa-trash-alt trash"></i></div>`)
+
+    }
   }
 
   $('.form-button').click(function () {
