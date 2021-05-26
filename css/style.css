@@ -210,6 +210,7 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 20px 20px;
 }
 
 .hakkimizda-container {
@@ -238,6 +239,7 @@ p {
 }
 
 .slider-container {
+  position: relative;
   padding-right: 0px;
   padding-left: 0px;
 }
@@ -255,12 +257,50 @@ p {
   color: #3c3191;
   border-color: #3c3191;
 }
+.n {
+  width: 100px;
+  height: 100px;
+}
 
 .responsive-menu-icon {
   color: #3c3191;
 }
 
 /*  YEDEK PARÇA */
+.favorites-hearth-icon {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 18px;
+  text-decoration: none;
+  color: #111;
+}
+.favorites-hearth-icon:hover {
+  color: #3c3191;
+}
+.favorites-button {
+  background-color: #fff;
+  color: #3c3191;
+  border: 1px solid #3c3191;
+  border-radius: 4px;
+  padding: 5px;
+  width: 110px;
+  margin-bottom: 10px;
+}
+.favorites-container {
+  position: relative;
+}
+.favorites {
+  width: 600px;
+  height: 500px;
+  background-color: #fff;
+  border: 2px solid #3c3191;
+  border-radius: 5px;
+  position: absolute;
+  top: -200px;
+  bottom:  0px;
+  left: -100px;
+  z-index: 10;
+}
 .bg-primary {
   background-color: #2C3245 !important;
 }
@@ -304,6 +344,9 @@ a.list-element:hover {
 .form-button {
   margin-top: 20px;
 }
+.form-container {
+  position: relative;
+}
 
 .machine-title {
   font-size: 40px;
@@ -339,6 +382,7 @@ a.list-element:hover {
   font-size: 21px;
   color: #111;
 }
+
 
 @media (max-width: 800px) {
 
