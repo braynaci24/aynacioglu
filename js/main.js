@@ -32,12 +32,10 @@ $(document).ready(function () {
   })
 
   $('body').on('click', '.trash', function () {
-    let src = $(this).prev().prev().attr('src')
-    let ind = data.indexOf(src);
-    data.splice(ind,1)
-    localStorage.setItem('favorites', JSON.stringify(data));
-  })
+    let src =  $(this).prev().prev().attr('src')
+    
 
+  })
 
   $('.favorites-close-icon').click(function () {
     $('.favorites').hide();

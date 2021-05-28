@@ -309,15 +309,11 @@ p {
 }
 
 .favorites-button {
-  background-color: #fff;
-  color: #3c3191;
-  border: 1px solid #3c3191;
-  border-radius: 4px;
-  padding: 5px;
-  width: 160px;
-  margin-bottom: 10px;
+  font-size: 25px;
 }
-
+.favorites-menu-icon{
+  font-size: 30px;
+}
 .favorites-container {
   position: relative;
 }
