@@ -1,6 +1,8 @@
 $(document).ready(function () {
+  
   let data = JSON.parse(localStorage.getItem('favorites')) || []
 
+    $('.favorites').append(`<div class="favorites-card"><img class="fav-images" src=" ${data.images}"> <span>${data.name}</span><i class="far fa-trash-alt trash"></i></div>`)
 
   $('.form-button').click(function () {
     $('.form-container').animate({
@@ -18,11 +20,9 @@ $(document).ready(function () {
     let imagesAttr = $(this).parent().prev().attr('src');
     let pieceName = $(this).prev().text();
     let pieceObject = {
-      name: pieceName,
       images: imagesAttr,
+      name: pieceName,
     }
-    
-    data.push(pieceObject);
     localStorage.setItem('favorites', JSON.stringify(pieceObject));
     $('.favorites').append(`<div class="favorites-card"><img class="fav-images" src=" ${pieceObject.images}"> <span>${pieceObject.name}</span><i class="far fa-trash-alt trash"></i></div>`)
   })
