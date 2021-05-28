@@ -1,8 +1,5 @@
 $(document).ready(function () {
-  
   let data = JSON.parse(localStorage.getItem('favorites')) || []
-
-    $('.favorites').append(`<div class="favorites-card"><img class="fav-images" src=" ${data.images}"> <span>${data.name}</span><i class="far fa-trash-alt trash"></i></div>`)
 
   $('.form-button').click(function () {
     $('.form-container').animate({
@@ -17,21 +14,23 @@ $(document).ready(function () {
   })
 
   $('.favorites-hearth-icon').click(function () {
+    data = JSON.parse(localStorage.getItem('favorites')) || []
     let imagesAttr = $(this).parent().prev().attr('src');
     let pieceName = $(this).prev().text();
     let pieceObject = {
-      images: imagesAttr,
-      name: pieceName,
+      "images": imagesAttr,
+      "name": pieceName,
     }
-    localStorage.setItem('favorites', JSON.stringify(pieceObject));
-    $('.favorites').append(`<div class="favorites-card"><img class="fav-images" src=" ${pieceObject.images}"> <span>${pieceObject.name}</span><i class="far fa-trash-alt trash"></i></div>`)
+    data.push(pieceObject);
+    localStorage.setItem('favorites', JSON.stringify(data));
+   
   })
-
+/* 
   $('body').on('click', '.trash', function () {
     let srcTrash = $(this).prev().prev().attr('src');
     let textDelete = $(this).prev().text();
   })
-
+ */
 
   $('.favorites-close-icon').click(function () {
     $('.favorites').hide();
