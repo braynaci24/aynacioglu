@@ -322,9 +322,13 @@ p {
   position: relative;
 }
 .trash {
+  text-decoration: none;
+  color: black;
   margin-left: 20px;
 }
-
+.trash:hover {
+  color: rgb(204, 17, 17);
+}
 .favorites {
   width: 600px;
   height: 500px;
