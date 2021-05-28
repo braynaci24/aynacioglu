@@ -27,17 +27,15 @@ $(document).ready(function () {
     }
     data.push(pieceObject);
     localStorage.setItem('favorites', JSON.stringify(data));
-    $('.favorites').append(`<div class="favorites-card"> <img class="fav-images" src="${pieceObject.images}"> <span>${pieceObject.name}</span><a class="trash" href="#"><i class="far fa-trash-alt"></i></a></div>`)
+    $('.favorites').append(`<div class="favorites-card"><img class="fav-images" src="${pieceObject.images}"> <span>${pieceObject.name}</span><a class="trash" href="#"><i class="far fa-trash-alt"></i></a></div>`)
    
   })
 
   $('body').on('click', '.trash', function () {
-    let _text = $(this).prev().text();
-    let ind = data.indexOf(_text);
+    let src = $(this).prev().prev().attr('src')
+    let ind = data.indexOf(src);
     data.splice(ind,1)
     localStorage.setItem('favorites', JSON.stringify(data));
-    $(this).parent().remove();
-   
   })
 
 
