@@ -2,7 +2,7 @@ $(document).ready(function () {
   let data = JSON.parse(localStorage.getItem('favorites')) || []
 
   for (let i = 0; i < data.length; i++) {
-    $('.append-new-li').append(`<li class="favorites-card"><img class="fav-images" src="${data[i].images}"> <span class="">${data[i].name}</span><a class="trash" href="#"><i class="far fa-trash-alt"></i></a></li>`)
+    $('.append-new-li').append(`<li class="favorites-card"><img class="fav-images" src="${data[i].images}"> <span class="fav-title">${data[i].name}</span><a class="trash" href="#"><i class="far fa-trash-alt"></i></a></li>`)
   }
 
   $('.form-button').click(function () {
@@ -24,7 +24,7 @@ $(document).ready(function () {
     }
     data.push(pieceObject);
     localStorage.setItem('favorites', JSON.stringify(data));
-    $('.append-new-li').append(`<li class="favorites-card"><img class="fav-images" src="${pieceObject.images}"> <span>${pieceObject.name}</span><a class="trash" href="#"><i class="far fa-trash-alt"></i></a></li>`)
+    $('.append-new-li').append(`<li class="favorites-card"><img class="fav-images" src="${pieceObject.images}"> <span class="fav-title">${pieceObject.name}</span><a class="trash" href="#"><i class="far fa-trash-alt"></i></a></li>`)
 
   })
 

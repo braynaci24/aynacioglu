@@ -481,6 +481,17 @@ a.list-element:hover {
   .special-makine-link {
     font-size: 12px;
   }
+  .fav-title {
+    font-size: 11px;
+  }
+  .favorites-card {
+    width: 100%;
+    padding: 10px;
+  }
+  .fav-images {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 @media (min-width: 1400px) {
