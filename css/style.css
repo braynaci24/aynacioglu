@@ -479,6 +479,9 @@ a.list-element:hover {
   border-radius: 8px;
   color: #fff;
 }
+.order-append {
+  padding: 0px;
+}
 @media (max-width: 800px) {
 
   .footer-bottom-span {
