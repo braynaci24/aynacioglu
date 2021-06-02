@@ -46,6 +46,15 @@ $(document).ready(function () {
     $('.favorites-card').remove()
   })
 
+  $('.order-end').click(function(){
+   let orderName =  $('.order-name').val();
+   let orderNumber = $('.order-number').val();
+   let orderAdress = $('.order-adress').val();
+   let orderMessage = $('.order-message').val();
+   console.log(orderName, orderNumber, orderMessage, orderAdress)
+  })
+
+
 })
 
 
