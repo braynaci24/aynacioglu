@@ -266,6 +266,15 @@ p {
   overflow: auto;
   display: none;
 }
+
+.append-new-li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px;
+}
+
 .favorites-card {
   background-color: #3c3191;
   width: 550px;
@@ -273,10 +282,13 @@ p {
   border-radius: 10px;
   margin-bottom: 8px;
   color: #fff;
+  list-style: none;
 }
+
 .b {
   margin-left: 10px;
 }
+
 .times {
   position: absolute;
   top: 0px;
@@ -311,31 +323,24 @@ p {
 .favorites-button {
   font-size: 25px;
 }
-.favorites-menu-icon{
+
+.favorites-menu-icon {
   font-size: 30px;
+  color: #3c3192;
 }
+
 .favorites-container {
   position: relative;
 }
+
 .trash {
   text-decoration: none;
   color: black;
   margin-left: 20px;
 }
+
 .trash:hover {
   color: rgb(204, 17, 17);
-}
-.favorites {
-  width: 600px;
-  height: 500px;
-  background-color: #fff;
-  border: 2px solid #3c3191;
-  border-radius: 5px;
-  position: absolute;
-  top: -200px;
-  bottom: 0px;
-  left: -100px;
-  z-index: 10;
 }
 
 .bg-primary {

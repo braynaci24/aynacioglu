@@ -1,8 +1,8 @@
 $(document).ready(function () {
   let data = JSON.parse(localStorage.getItem('favorites')) || []
 
-  for(let i = 0; i < data.length; i++){
-    $('.favorites').append(`<div class="favorites-card"> <img class="fav-images" src="${data[i].images}"> <span class="">${data[i].name}</span><a class="trash" href="#"><i class="far fa-trash-alt"></i></a></div>`)
+  for (let i = 0; i < data.length; i++) {
+    $('.append-new-li').append(`<li class="favorites-card"><img class="fav-images" src="${data[i].images}"> <span class="">${data[i].name}</span><a class="trash" href="#"><i class="far fa-trash-alt"></i></a></li>`)
   }
 
   $('.form-button').click(function () {
@@ -13,9 +13,6 @@ $(document).ready(function () {
     }, 2000)
   })
 
-  $('.favorites-button').click(function () {
-    $('.favorites').show();
-  })
 
   $('.favorites-hearth-icon').click(function () {
     data = JSON.parse(localStorage.getItem('favorites')) || []
@@ -27,19 +24,22 @@ $(document).ready(function () {
     }
     data.push(pieceObject);
     localStorage.setItem('favorites', JSON.stringify(data));
-    $('.favorites').append(`<div class="favorites-card"><img class="fav-images" src="${pieceObject.images}"> <span>${pieceObject.name}</span><a class="trash" href="#"><i class="far fa-trash-alt"></i></a></div>`)
-   
+    $('.append-new-li').append(`<li class="favorites-card"><img class="fav-images" src="${pieceObject.images}"> <span>${pieceObject.name}</span><a class="trash" href="#"><i class="far fa-trash-alt"></i></a></li>`)
+
   })
 
   $('body').on('click', '.trash', function () {
-    let src =  $(this).prev().prev().attr('src')
-    
+    let ind = $(this).parent().index();
+    data.splice(ind, 1)
+    localStorage.setItem('favorites', JSON.stringify(data))
+    $(this).parent().remove();
 
   })
 
   $('.favorites-close-icon').click(function () {
-    $('.favorites').hide();
+    $('.favorites').fadeOut(400);
   })
+
 })
 
 
