@@ -1,10 +1,12 @@
 $(document).ready(function () {
   let data = JSON.parse(localStorage.getItem('favorites')) || []
-
+  
   for (let i = 0; i < data.length; i++) {
-    $('.append-new-li').append(`<li class="favorites-card"><img class="fav-images" src="${data[i].images}"> <span class="fav-title">${data[i].name}</span><a class="trash" href="#"><i class="far fa-trash-alt"></i></a></li>`)
-  }
+    $('.append-new-li').prepend(`<li class="favorites-card"><img class="fav-images" src="${data[i].images}"> <span class="fav-title">${data[i].name}</span><a class="trash" href="#"><i class="far fa-trash-alt"></i></a> </li>`)
+    $('.order-append').prepend(`<li class="order-card"><img class="order-images" src="${data[i].images}"><span>${data[i].name}</span></li> `)
 
+  }
+  
   $('.form-button').click(function () {
     $('.form-container').animate({
       left: '300px',
@@ -15,8 +17,7 @@ $(document).ready(function () {
 
 
   $('.favorites-hearth-icon').click(function () {
-    data = JSON.parse(localStorage.getItem('favorites')) || []
-    let imagesAttr = $(this).parent().prev().attr('src');
+    let imagesAttr = $(this).parent().prev().attr('href');
     let pieceName = $(this).prev().text();
     let pieceObject = {
       images: imagesAttr,
@@ -24,7 +25,7 @@ $(document).ready(function () {
     }
     data.push(pieceObject);
     localStorage.setItem('favorites', JSON.stringify(data));
-    $('.append-new-li').append(`<li class="favorites-card"><img class="fav-images" src="${pieceObject.images}"> <span class="fav-title">${pieceObject.name}</span><a class="trash" href="#"><i class="far fa-trash-alt"></i></a></li>`)
+    $('.append-new-li').prepend(`<li class="favorites-card"><img class="fav-images" src="${pieceObject.images}"> <span class="fav-title">${pieceObject.name}</span><a class="trash" href="#"><i class="far fa-trash-alt"></i></a></li>`)
 
   })
 
@@ -38,6 +39,11 @@ $(document).ready(function () {
 
   $('.favorites-close-icon').click(function () {
     $('.favorites').fadeOut(400);
+  })
+
+  $('body').on('click','.order-button', function(){
+    $('.order-append').prepend(`<li class="order-card"><img class="order-images" src="${data.images}"><span>${data.name}</span></li>`)
+    $('.favorites-card').remove()
   })
 
 })
