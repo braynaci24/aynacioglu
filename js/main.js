@@ -61,10 +61,7 @@ $(document).ready(function () {
   $('.order-end').click(function () {
     send_handle();
   })
-
-
 })
-
 
 $(window).scroll(function () {
   let scroll = $(window).scrollTop();
