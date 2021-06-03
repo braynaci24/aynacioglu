@@ -1,7 +1,6 @@
 $(document).ready(function () {
   let data = JSON.parse(localStorage.getItem('favorites')) || []
-
-
+  
   for (let i = 0; i < data.length; i++) {
     $('.append-new-li').prepend(`<li class="favorites-card"><img class="fav-images" src="${data[i].images}"> <span class="fav-title">${data[i].name}</span><span class="trash">SİL</span></li>`)
     $('.order-append').prepend(`<li class="order-card"><img class="order-images" src="${data[i].images}"><span>${data[i].name}</span></li> `)
