@@ -49,14 +49,13 @@ $(document).ready(function () {
 
 
   function send_handle() {
-
     let num = $(".order-number").val();
     let msg = $(".order-message").val();
     let name = $(".order-name").val();
     let adress = $(".order-adress").val();
     let orderWp = $('.order-card').find('span').text();
 
-    var win = window.open(`https://wa.me/${num}?text=I%27m%20${orderWp}%20${adress}%20${name}%20${msg}`, '_blank');
+    let win = window.open(`https://wa.me/${num}?text=%27%20${orderWp}%20${adress}%20${name}%20${msg}`, '_blank');
   }
 
   $('.order-end').click(function () {
@@ -68,8 +67,8 @@ $(document).ready(function () {
 
 
 $(window).scroll(function () {
-  var scroll = $(window).scrollTop();
-  var navbarHeight = $(".navbar").height();
+  let scroll = $(window).scrollTop();
+  let navbarHeight = $(".navbar").height();
   if (scroll > navbarHeight) {
     $(".navbar").addClass("fixed-top");
   } else {
