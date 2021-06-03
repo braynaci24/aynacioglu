@@ -1,12 +1,13 @@
 $(document).ready(function () {
   let data = JSON.parse(localStorage.getItem('favorites')) || []
-  
+
+
   for (let i = 0; i < data.length; i++) {
     $('.append-new-li').prepend(`<li class="favorites-card"><img class="fav-images" src="${data[i].images}"> <span class="fav-title">${data[i].name}</span><span class="trash">SİL</span></li>`)
     $('.order-append').prepend(`<li class="order-card"><img class="order-images" src="${data[i].images}"><span>${data[i].name}</span></li> `)
 
   }
-  
+
   $('.form-button').click(function () {
     $('.form-container').animate({
       left: '300px',
@@ -41,20 +42,30 @@ $(document).ready(function () {
     $('.favorites').fadeOut(400);
   })
 
-  $('body').on('click','.order-button', function(){
+  $('body').on('click', '.order-button', function () {
     $('.order-append').prepend(`<li class="order-card"><img class="order-images" src="${data.images}"><span>${data.name}</span></li>`)
     $('.favorites').remove()
   })
 
-  $('.order-end').click(function(){
-   let orderName =  $('.order-name').val();
-   let orderNumber = $('.order-number').val();
-   let orderAdress = $('.order-adress').val();
-   let orderMessage = $('.order-message').val();
-   console.log(orderName, orderNumber, orderMessage, orderAdress)
+
+  function send_handle() {
+
+    let num = $(".order-number").val();
+    let msg = $(".order-message").val();
+    let name = $(".order-name").val();
+    let adress = $(".order-adress").val();
+    let orderWp = $('.order-card').find('span').text();
+
+    var win = window.open(`https://wa.me/${num}?text=I%27m%20${orderWp}%20${adress}%20hello%20${name}%20friend%20${msg}`, '_blank');
+  }
+
+  $('.order-end').click(function () {
+    send_handle();
   })
 
+
 })
+
 
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
