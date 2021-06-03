@@ -56,7 +56,7 @@ $(document).ready(function () {
     let adress = $(".order-adress").val();
     let orderWp = $('.order-card').find('span').text();
 
-    var win = window.open(`https://wa.me/${num}?text=I%27m%20${orderWp}%20${adress}%20hello%20${name}%20friend%20${msg}`, '_blank');
+    var win = window.open(`https://wa.me/${num}?text=I%27m%20${orderWp}%20${adress}%20${name}%20${msg}`, '_blank');
   }
 
   $('.order-end').click(function () {
