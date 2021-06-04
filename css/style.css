@@ -1,13 +1,16 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
-.page-logo{
+
+.page-logo {
   width: 80px;
   height: 80px;
 }
-.slider-photo  {
+
+.slider-photo {
   height: 70vh;
 }
+
 .navbar {
   transition: all 0.5s ease;
 }
@@ -295,27 +298,31 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-.fav-title  {
+
+.fav-title {
   font-size: 13px;
 }
+
 .order-button {
-  margin-left: 40px;
   border-radius: 4px;
-  background-color: #fff!important;
-  margin-top: 22px;
+  background-color: #fff !important;
   border: 1px solid #111;
 }
+
 .order-end {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .order-button a {
   text-decoration: none;
-  color: #111!important;
+  color: #111 !important;
 }
-.order-finish{
+
+.order-finish {
   height: 50vh;
 }
+
 .b {
   margin-left: 10px;
 }
@@ -463,7 +470,8 @@ a.list-element:hover {
   align-items: center;
   justify-content: center;
 }
-.order-container{
+
+.order-container {
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -471,20 +479,25 @@ a.list-element:hover {
   align-items: center;
   justify-content: center;
 }
+
 .order-container li {
   list-style: none;
 }
+
 .order-images {
   width: 80px;
   height: 80px;
 }
+
 .order-button {
   background-color: #3c3191;
   padding: 10px;
 }
+
 .order-button a {
   color: #fff;
 }
+
 .order-card {
   border: 1px solid grey;
   margin-bottom: 10px;
@@ -492,14 +505,16 @@ a.list-element:hover {
   border-radius: 8px;
   color: #111;
 }
+
 .order-append {
   padding: 0px;
 }
+
 @media (max-width: 800px) {
   .order-header-new-padding {
     padding: 25px 5px;
   }
- 
+
   .footer-bottom-span {
     font-size: 12px;
   }
@@ -552,33 +567,45 @@ a.list-element:hover {
   .special-makine-link {
     font-size: 12px;
   }
+
   .fav-title {
     font-size: 11px;
   }
+
   .favorites-card {
     width: 100%;
     padding: 10px;
     margin-top: 40px;
   }
+
   .fav-images {
     width: 50px;
     height: 50px;
   }
+
   .slider-photo {
     height: 30vh;
   }
- 
+
 }
+
 @media (max-width: 1321px) {
   .header-contact-icon {
     display: none;
   }
+
   .contact-2 {
     display: none;
+  }
+
+  .order-button a {
+    text-decoration: none;
+    color: #111 !important;
   }
 }
 
 @media (min-width: 1400px) {
+
   .container,
   .container-lg,
   .container-md,
@@ -587,7 +614,7 @@ a.list-element:hover {
   .container-xxl {
     max-width: 1389px;
   }
-  
+
 }
 
 @keyframes smoothScroll {
