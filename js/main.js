@@ -57,7 +57,6 @@ $(document).ready(function () {
     let orderWp = "";
     for(let i = 0; i < data.length; i++){
       orderWp += data[i].name + " -- " 
-      console.log(orderWp)
     }
 
     let win = window.open(`https://wa.me/${num}?text=%27%20${orderWp}%20${adress}%20${name}%20${msg}`, '_parent');
