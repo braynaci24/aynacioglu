@@ -558,6 +558,7 @@ a.list-element:hover {
   .favorites-card {
     width: 100%;
     padding: 10px;
+    margin-top: 40px;
   }
   .fav-images {
     width: 50px;
