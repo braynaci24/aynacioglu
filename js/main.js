@@ -41,7 +41,7 @@ $(document).ready(function () {
     $('.favorites').fadeOut(400);
   })
 
-  $('body').on('click', '.order-button', function () {
+  $('.order-button').click(function(){
     $('.order-append').prepend(`<li class="order-card"><img class="order-images" src="${data.images}"><span>${data.name}</span></li>`)
     $('.favorites').remove()
   })
@@ -52,7 +52,12 @@ $(document).ready(function () {
     let msg = $(".order-message").val();
     let name = $(".order-name").val();
     let adress = $(".order-adress").val();
-    let orderWp = $('.order-card').find('span').text();
+    
+    let orderWp = "";
+    for(let i = 0; i < data.length; i++){
+      orderWp += data[i].name + " -- " 
+      console.log(orderWp)
+    }
 
     let win = window.open(`https://wa.me/${num}?text=%27%20${orderWp}%20${adress}%20${name}%20${msg}`, '_blank');
   }
