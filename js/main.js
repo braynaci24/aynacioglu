@@ -18,7 +18,6 @@ $(document).ready(function () {
 
   $('.favorites-hearth-icon').click(function () {
     let imagesAttr = $(this).parent().prev().attr('href');
-    console.log(imagesAttr)
     let pieceName = $(this).prev().text();
     let pieceObject = {
       images: imagesAttr,
