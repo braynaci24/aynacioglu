@@ -18,6 +18,7 @@ $(document).ready(function () {
 
   $('.favorites-hearth-icon').click(function () {
     let imagesAttr = $(this).parent().prev().attr('href');
+    console.log(imagesAttr)
     let pieceName = $(this).prev().text();
     let pieceObject = {
       images: imagesAttr,
@@ -52,14 +53,14 @@ $(document).ready(function () {
     let msg = $(".order-message").val();
     let name = $(".order-name").val();
     let adress = $(".order-adress").val();
-    
+
     let orderWp = "";
     for(let i = 0; i < data.length; i++){
       orderWp += data[i].name + " -- " 
       console.log(orderWp)
     }
 
-    let win = window.open(`https://wa.me/${num}?text=%27%20${orderWp}%20${adress}%20${name}%20${msg}`, '_blank');
+    let win = window.open(`https://wa.me/${num}?text=%27%20${orderWp}%20${adress}%20${name}%20${msg}`, '_parent');
   }
 
   $('.order-end').click(function () {

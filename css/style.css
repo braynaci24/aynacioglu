@@ -369,6 +369,7 @@ p {
   color: black;
   margin-left: 20px;
   color: red;
+  font-size: 25px;
 }
 
 
@@ -495,6 +496,9 @@ a.list-element:hover {
   padding: 0px;
 }
 @media (max-width: 800px) {
+  .order-header-new-padding {
+    padding: 25px 5px;
+  }
  
   .footer-bottom-span {
     font-size: 12px;
